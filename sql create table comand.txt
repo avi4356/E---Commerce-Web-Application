@@ -1,0 +1,347 @@
+create table stock(id varchar(10),itemname varchar(100),categories varchar(40),subcategories varchar(30),description varchar(250),price number,photo varchar(50),photo1 varchar(20),photo2 varchar(30),quantity varchar(30));
+
+create table signup(Firstname varchar(20),lastname varchar(20),email varchar(40),phone  number,gender varchar(10),password varchar(40),address varchar(50));
+
+
+create table cart(sno number,customerid varchar(40),id varchar(10),dateofpurches date,billno varchar(10));
+
+create sequence seq1 start  with 1 increment by 1 minvalue 1 maxvalue 100000
+
+create sequence seq101 start  with 1 increment by 1 minvalue 101 maxvalue 100000
+
+ 
+create table bank(userid varchar(10),bill varchar(100),amount varchar(40),bankname varchar(40),account varchar(40),key varchar(50),dateofpurches varchar(20));
+
+create table bill(bno number,customerid varchar(40),totalammount varchar(10),dateofpurches date,totalitem varchar(10));
+
+
+
+
+insert into stock values(111,'Mi LED TV Ultra HD Android TV (Black)','tv','mi','Brand	Mi
+
+Model	L55M5-5XIN
+Model Name	4X
+Model Year	2019
+Item Weight	13 Kg
+Product Dimensions	138.8 x 8.6 x 72.2 cm
+Item model number	L55M5-5XIN',35000,'b3.jpg','b1.jpg','b2.jpg',5);
+
+
+insert into stock values(112,'Dinshi Fusion+ Android Version WiFi Full HD Projector','projecter','dinshi',
+'Brand	Dinshi
+Model	Dinshi fusion+
+Item Weight	3.5 Kg
+Product Dimensions	31 x 24 x 10 cm
+Item model number	Dinshi fusion+
+Number Of Items	1
+Display Technology	LED
+Screen Size	100.5 Inches
+Display Resolution Maximum	1080p Full HD
+Batteries Required	No'
+,15000,'c1.jpg','c2.jpg','c3.jpg',5);
+
+
+
+insert into stock values(113,'Samsung Galaxy M30s (Blue, 4GB RAM, Super AMOLED Display, 64GB Storage)','Samsung M30','Sumsung',
+'OS	Android
+RAM	4 GB
+Item Weight	186 g
+Product Dimensions	15.9 x 0.9 x 7.5 cm
+Batteries:	1 Lithium ion batteries required. (included)
+Item model number	SM-M307FZBDINS
+Wireless WCDMA, 4G LTE, FDD, TDD'
+,55000,'d1.jpg','d2.jpg','d3.jpg',5);
+
+
+
+insert into stock values(114,'Muzili Smart Watch Large Color Full Touch Screen','watch','mi',
+'?Multifunction Smart Watch IP68 Waterproof?Muzili smart watch offers the functions of heart rate,  swim-proof and 50 meters water-resistant, you can track swims in swimming pool, running in the rain or wearing in the cold shower.'
+,3000,'e1.jpg','e2.jpg','e3.jpg',5);
+
+
+insert into stock values(115,'one plus 7','mobile phone','one plus',
+'OS	Android 9 Pie OxygenOS
+RAM	8 GB
+Item Weight	204 g
+Product Dimensions	16.3 x 0.9 x 7.6 cm
+Batteries:	1 Lithium ion batteries required. (included)
+Item model number	GM1911
+Wireless communication technologies	Bluetooth;WiFi Hotspot'
+,35000,'f1.jpg','f2.jpg','f3.jpg',5);
+
+
+
+insert into stock values(116,'Instaplay Insta X3 10 W Powerful Bluetooth Speaker','speaker','mi',
+'
+Brand	INSTAPLAY
+Model	INSTA-X3
+Item Weight	422 g
+Product Dimensions	18 x 4.9 x 6.6 cm
+Item model number	INSTA-X3
+Additional Features	Built-in Microphone
+Spearkers Maximum Output Power	10 Watts
+Speaker Connectivity	Wired'
+,35000,'g1.jpg','g2.jpg','g3.jpg',5);
+
+
+
+insert into stock values(117,'Portronics Portable RuffPad E-Writer','E writer','mi',
+'Pressure-sensitive screen lets you create thick and thin lines.
+Tablet displays your notes until you erase them with the touch of a button.
+Durable case and recessed screen are safe for school travel and home  '
+,35000,'h1.jpg','h2.jpg','h3.jpg',5);
+
+
+insert into stock values(118,'Smart Watch Fitness Band, HolyHigh Fitness Tracker with Heart Rate Monitor Waterproof Sport ','watch','mi',
+'Heart rate monitor and all day activities tracker Holyhigh 115plus fitness trackers support heart rate monitor pedometer walking
+Batteries Included	Yes
+Brand	HolyHigh
+Color	Purple
+Size	kids boys girls adults women me'
+,35000,'i1.jpg','i2.jpg','i3.jpg',5);
+
+
+insert into stock values(119,'Lenovo Ideapad S145 AMD RYZEN 3 3200U 15.6-inch FHD Laptop','laptop','leanvo',
+'Brand	Lenovo
+Series	Ideapad S145
+Colour	GREY
+Screen Size	15.6 Inches
+Maximum Display Resolution	1920 x 1080 (Full HD)
+Processor Count	1
+RAM Size	4 GB
+Memory Technology	DDR4
+Computer Memory Type	DDR DRAM
+Hard Drive Size	1 TB'
+,35000,'j1.jpg','j2.jpg','j3.jpg',5);
+
+
+
+insert into stock values(120,'ASUS VivoBook 15 X509 ( Core i3- 7th Gen/4 GB/PCIEG NVME 512GB SSD/ 15.6','laptop','ASUS',
+'
+Brand	Asus
+Maximum Display Resolution	1920x1080
+Item Weight	2.74 Kg
+Package Dimensions	46 x 28.4 x 6.4 cm
+Processor Brand	Intel
+Processor Type	Core i3 7100U
+Processor Speed	2.30 GHz
+Processor Count	2
+RAM Size	4 GB
+Memory Technology	DDR4
+'
+,35000,'k1.jpg','k2.jpg','k3.jpg',5);
+
+
+
+insert into stock values(121,' (Renewed) Dell Latitude Laptop (Core I5 5th Gen/8GB/500 GB HDD/Windows 10/MS Office Pro','laptop','DELL',
+'Brand	Dell
+Colour	Black
+Item Height	32 Millimeters
+Item Width	29 Centimeters
+Screen Size	14 Inches
+Screen Resolution	1366x768
+Maximum Display Resolution	1366x768'
+,41000,'l1.jpg','l2.jpg','l3.jpg',5);
+
+
+
+insert into stock values(122,'ZAAP 6700mAh Ultra Compact Panasonic Cells Fast Charging 2.1A CES Universal Compatibility','powerbank','zaap',
+'Brand	ZAAP
+Item Weight	127 g
+Product Dimensions	10 x 4 x 2 cm
+Item part number	689076747219
+Number Of Items	1
+Power Source	AC Adaptor And USB
+Batteries Included	No
+Batteries Required	No
+'
+,2000,'m1.jpg','m2.jpg','m3.jpg',5);
+
+
+
+insert into stock values(123,'Boat Rockerz 400 On-Ear Bluetooth Headphones (Carbon Black)','head phone','BOAT',
+'Brand	Boat
+Model	Rockerz 400
+Model Name	Rockerz 400
+Item Weight	109 g
+Product Dimensions	24.1 x 20.6 x 8.1 cm
+Batteries:	1 A batteries required. (included)
+Item model number	Rockerz 400
+Hardware Platform	Tablet, Laptop, Smartphone
+'
+,3000,'n1.jpg','n2.jpg','n3.jpg',5);
+
+
+
+
+insert into stock values(124,'
+Roll over image to zoom in Boltt Blast 1000 Hi-Fi Stereo Over-Ear Bluetooth Headphones','headphone','boltt',
+'Brand	Boltt
+Model	BH1000
+Item Weight	272 g
+Package Dimensions	33.4 x 14.6 x 9.6 cm
+Item model number	BH1000
+Hardware Platform	Tablet, PC, Smartphone
+'
+,3000,'o1.jpg','o2.jpg','o3.jpg',5);
+
+
+
+
+insert into stock values(125,'AmazonBasics Cell Phone Stand for iPhone and Android | Black','cell phone stand','iphone',
+'
+Brand	AmazonBasics
+Model	AMZ-CPS-BK
+Item Weight	95.3 g
+Product Dimensions	10 x 7.3 x 10 cm
+Item model number	AMZ-CPS-BK
+Batteries Required	No
+'
+,200,'p1.jpg','p2.jpg','p3.jpg',5);
+
+
+
+
+insert into stock values(126,'Roll over image to zoom ini-gadgets Acrylic Multipurpose Organizer, 16x11x10cm, Clear','phone stand','mi',
+'Transparent acrylic desktop remote controls holder. No more scrambling for remotes
+Unique design with multi angle adjustable stand contains 4 separate slots. Holds up to 6 remote controls mobile phones
+Clear and tidy storage container for cosmetic
+'
+,600,'q1.jpg','q2.jpg','q3.jpg',5);
+
+
+
+insert into stock values(127,'Pioneer DDJ-200 Smart DJ controller With Transition FX And Bluetooth','speaker','sony',
+'
+Item Weight	1.73 Kg
+Package Dimensions	44 x 29 x 10.8 cm
+Item model number	DDJ 200
+'
+,14300,'r1.jpg','r2.jpg','r3.jpg',5);
+
+
+
+insert into stock values(128,'JBL C300SI On-Ear Dynamic Wired Headphones, Without Mic (Black)','head phone','JBL',
+'Shipping	FREE Shipping	FREE Shipping	FREE Shipping	FREE Shipping
+Sold By	Appario Retail PVT.
+Colour	Black	White	White	Black
+Connectivity Technology	Wired	Wired	Wired	Wired
+Impedance		32 Ohm		24 Ohm
+Item Dimensions (Length * Breadth * Height)'
+,4300,'s1.jpg','s2.jpg','s3.jpg',5);
+
+
+
+insert into stock values(129,'Panasonic 138 cm (55 Inches) 4K UHD LED Smart TV TH-55FX650D (Gray) (2018 model)','TV','panasonic',
+'Screen Size
+55 inches	
+Display Technology
+Display backlight technology used by the TV LED  
+Resolution
+The number of display pixels in the TV pixels
+3840 x 2160 pixels	3840x2160 pixele'
+,4300,'t1.jpg','t2.jpg','t3.jpg',5);
+
+
+
+insert into stock values(130,'Canon EOS M200 Mirrorless Camera, EF-M 15-45mm f/3.5-6.3','camera','camera',
+'Brand	Canon
+Model	M200(15-45)
+Model Name	EOS M200
+Model Year	2019
+Item Weight	299 g
+Product Dimensions	10.8 x 6.7 x 3.5 cm
+Batteries:	1 Lithium ion batteries required. (included)
+Item model number	M200(15-45)
+Number Of Items	4
+'
+,43000,'u1.jpg','u2.jpg','u3.jpg',5);
+
+
+
+insert into stock values(131,'Canon EOS M200 smart Camera, EF-M 15-45mm f/3.5-6.3','camera','camera',
+'Brand	Canon
+Model	M200(15-45)
+Model Name	EOS M300
+Model Year	2019
+Item Weight	300 g
+Product Dimensions	10.8 x 6.7 x 3.5 cm
+Batteries:	1 Lithium ion batteries required. (included)
+Item model number	M200(15-45)
+Number Of Items	4
+'
+,44000,'u11.jpg','u22.jpg','u33.jpg',5);
+
+
+
+
+insert into stock values(132,'Canon EOS M200 smarter and mordern Camera, EF-M 15-45mm f/3.5-6.3','camera','camera',
+'Brand	Canon
+Model	M200(15-50)
+Model Name	EOS M300
+Model Year	2019
+Item Weight	400 g
+Product Dimensions	10.9 x 6.8 x 3.5 cm
+Batteries:	1 Lithium ion batteries required.
+Item model number	M200(15-45)
+Number Of Items	4
+'
+,45000,'u111.jpg','u222.jpg','u333.jpg',5);
+
+
+insert into stock values(133,'Canon EOS M300 smarter Camera','camera','camera',
+'Brand	Canon
+Model	M200(15-50)
+Model Name	EOS M400
+Model Year	2019
+Item Weight	400 g
+Product Dimensions	10.9 x 6.8 x 3.5 cm
+Batteries:	1 Lithium ion batteries required.
+Item model number	M300(15-45)
+Number Of Items	4
+'
+,46000,'u1111.jpg','u2222.jpg','u3333.jpg',5);
+
+
+
+
+insert into stock values(134,'
+Roll over image to  max zoom in Boltt Blast 1000 Hi-Fi Stereo Over-Ear Bluetooth Headphones','headphone','boltt',
+'Brand	Boltt
+Model	BH1000
+Item Weight	276 g
+Package Dimensions	33.4 x 14.6 x 9.6 cm
+Item model number	BH2000
+Hardware Platform	Tablet, PC, Smartphone
+'
+,3000,'o11.jpg','o22.jpg','o33.jpg',5);
+
+
+
+insert into stock values(135,'
+Roll over image to zoom in Boltt Blast 1000 ,Bluetooth Headphones','headphone','boltt',
+'Brand	Boltt
+Model	BH1000
+Item Weight	272 g
+Package Dimensions	33.4 x 14.6 x 9.6 cm
+Item model number	BH1000
+Hardware Platform	Tablet, PC, Smartphone
+'
+,4000,'o111.jpg','o222.jpg','o333.jpg',5);
+
+
+
+insert into stock values(136,'
+Roll over image to max quality zoom in Boltt Blast 1000 Bluetooth Headphones','headphone','boltt',
+'Brand	Boltt
+Model	BH3000
+Item Weight	279 g
+Package Dimensions	33.4 x 14.6 x 9.6 cm
+Item model number	BH1000
+Hardware Platform	Tablet, PC, Smartphone
+'
+,5000,'o1111.jpg','o2222.jpg','o3333.jpg',5);
+
+
+
+
